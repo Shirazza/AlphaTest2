@@ -72,7 +72,35 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 style="@style/TextAppearance.AppCompat.Large"
-                android:text="Portal: human players may deliver power cubes to robots through either of the portal walls." />
+                android:text="Portal: human players may deliver power cubes to robots through either of the portal walls. The chute features a swinging wall that the human player uses to push the power cubes onto the field." />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                style="@style/TextAppearance.AppCompat.Large"
+                android:text="Exchange: An exchange is located between player station 1 and player station 2 and used by robots to deliver power cubes to human players. Human players can then either place power cubes in the vault or feed them back to the robot through the return." />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                style="@style/TextAppearance.AppCompat.Large"
+                android:text="Climb: Near the end of the match, the members of the alliance need to climb from the platform and be fully supported by the scale with the bumpers fully above the bricks." />
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

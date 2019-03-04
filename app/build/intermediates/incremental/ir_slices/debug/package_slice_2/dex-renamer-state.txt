@@ -1,4 +1,0 @@
-#Mon Mar 04 13:09:29 IST 2019
-base.0=G\:\\AlphaTest\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\2
-path.0=classes.dex
-renamed.0=classes.dex

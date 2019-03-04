@@ -11,18 +11,10 @@ import java.io.InputStream;
 
 public class Help extends AppCompatActivity {
 
-    ImageView im;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_help);
-
-        im = (ImageView) findViewById(R.id.image);
-        im.setImageResource(R.drawable.qmark);
-
-        //InputStream is= openFileInput(help);
-        }
+        setContentView(R.layout.activity_help); }
 
     public boolean onCreateOptionsMenu(Menu menu){
         menu.add(0,0,100,"Credits");
