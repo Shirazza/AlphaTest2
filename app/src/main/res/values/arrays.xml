@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="abilities">
+            <item>autonomous</item>
+            <item>help</item>
+            <item>climb</item>
+            <item>switch</item>
+            <item>scale</item>
+            <item>portal</item>
+            <item>exchange</item>
+    </string-array>
+
+</resources>
