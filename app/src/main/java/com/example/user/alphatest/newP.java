@@ -37,12 +37,13 @@ public class newP extends AppCompatActivity {
 
     public void sendM(View view) {
         phoneNum=thephoneNum.getText().toString();
-        if(phoneNum.equals("0509020098")) {
+        if(phoneNum.equals("0509022098")|| phoneNum.equals("05056994969")) {
             code=""+((int)(Math.random()*900)+100);
             SmsManager smsManager=SmsManager.getDefault();
-            smsManager.sendTextMessage(phoneNum, null, code, null, null);}
+            smsManager.sendTextMessage(phoneNum, null, code, null, null);
+            Toast.makeText(this, "The message has been sent to your mentor's phone", Toast.LENGTH_LONG).show();}
         else
-            Toast.makeText(this, "enter only your mentor's phone number", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Enter only your mentor's phone number", Toast.LENGTH_LONG).show();
     }
 
     /*public boolean checkPhone(){
@@ -59,7 +60,7 @@ public class newP extends AppCompatActivity {
         if (codeEntered.equals(code))
             Toast.makeText(this, "the code you entered is correct", Toast.LENGTH_LONG).show();
         else
-            Toast.makeText(this, "the code you entered is not correct", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "the code you entered is incorrect", Toast.LENGTH_LONG).show();
     }
 
 
@@ -68,43 +69,26 @@ public class newP extends AppCompatActivity {
         email=theemail.getText().toString();
 
         if (newP!=null){
-        AlertDialog.Builder adb1;
-        adb1= new AlertDialog.Builder(this);
-        adb1.setTitle("Are you sure you want to continue?");
-        adb1.setMessage("Are you sure this is the new password you want: "+newP+ " ?");
-        adb1.setIcon(R.drawable.qmark);
-        adb1.setPositiveButton("yes", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                final ProgressDialog progressDialog=ProgressDialog.show(newP.this,"Please wait...","processing",true);
-                firebaseAuth.createUserWithEmailAndPassword(email, newP)
-                        .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-                            @Override
-                            public void onComplete(@NonNull Task<AuthResult> task) {
-                                progressDialog.dismiss();
-                                if (task.isSuccessful()){
-                                    Toast.makeText(newP.this,"Signed Up successfully", Toast.LENGTH_LONG).show();
-                                    Intent goStart=new Intent(newP.this, Main.class);
-                                    goStart.putExtra("new password", newP);
-                                    startActivityForResult(goStart, 1);
-                                }
-                                else {
-                                    Log.e("Error",task.getException().toString());
-                                    Toast.makeText(newP.this,task.getException().getMessage(), Toast.LENGTH_LONG).show();
-                                }
-                            }
-                        });
-
-            }
-        });
-        adb1.setNegativeButton("no", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                dialog.cancel();;
-            }
-        });
-        AlertDialog ad=adb1.create();
-        ad.show();}
+            AlertDialog.Builder adb1;
+            adb1= new AlertDialog.Builder(this);
+            adb1.setTitle("Are you sure you want to continue?");
+            adb1.setMessage("Are you sure this is the new password you want: "+newP+ " ?");
+            adb1.setIcon(R.drawable.qmark);
+            adb1.setPositiveButton("yes", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    Intent goStart=new Intent(newP.this, Main.class);
+                    goStart.putExtra("new password", newP);
+                    startActivityForResult(goStart, 1); }
+            });
+            adb1.setNegativeButton("no", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    dialog.cancel();;
+                }
+            });
+            AlertDialog ad=adb1.create();
+            ad.show();}
         else
             Toast.makeText(this, "enter a new password", Toast.LENGTH_LONG).show();
     }

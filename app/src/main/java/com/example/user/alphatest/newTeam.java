@@ -40,7 +40,6 @@ public class newTeam extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_new_team);
 
-        ref= FirebaseDatabase.getInstance().getReference("teams");
         s1=(Switch) findViewById(R.id.switch1);
         s2=(Switch) findViewById(R.id.switch2);
         s3=(Switch) findViewById(R.id.switch3);
@@ -66,6 +65,41 @@ public class newTeam extends AppCompatActivity {
         tv6.setVisibility(View.INVISIBLE);
         sb3.setVisibility(View.INVISIBLE);
         sb4.setVisibility(View.INVISIBLE);
+
+        Intent get1=getIntent();
+        Tnum=get1.getStringExtra("team num1");
+        Gnum=get1.getStringExtra("game num1");
+        auto=get1.getBooleanExtra("auto1", false);
+        swi=get1.getIntExtra("switch1", 0);
+        scale=get1.getIntExtra("scale1", 0);
+        portal=get1.getIntExtra("portal1", 0);
+        exch=get1.getIntExtra("exchange1", 0);
+        climb=get1.getBooleanExtra("climb1", false);
+        help=get1.getBooleanExtra("help1", false);
+
+        tn.setText(Tnum);
+        gn.setText(Gnum);
+        if (auto== true){s1.setChecked(true);}
+        else{s1.setChecked(false);}
+        sb1.setProgress(swi);
+        sb2.setProgress(scale);
+        if(portal>0){
+            s2.setChecked(true);
+            sb3.setVisibility(View.VISIBLE);
+            sb3.setProgress(portal);
+        }
+        if(exch>0){
+            s3.setChecked(true);
+            sb4.setVisibility(View.VISIBLE);
+            sb4.setProgress(exch);
+        }
+        if (climb== true){s4.setChecked(true);}
+        else{s4.setChecked(false);}
+        if (help== true){s5.setChecked(true);}
+        else{s5.setChecked(false);}
+
+        ref= FirebaseDatabase.getInstance().getReference("teams");
+
 
         s2.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -105,8 +139,28 @@ public class newTeam extends AppCompatActivity {
     }
 
     public void gotoweb(View view) {
+        Gnum=gn.getText().toString();
+        Tnum=tn.getText().toString();
+        auto = s1.isChecked();
+        swi=sb1.getProgress()+1;
+        scale=sb2.getProgress()+1;
+        if(s2.isChecked()){
+            portal=sb3.getProgress()+1;}
+        if(s3.isChecked()){
+            exch=sb4.getProgress()+1;}
+        climb = s4.isChecked();
+        help = s5.isChecked();
         Intent go= new Intent(this, webview.class);
-        startActivity(go);
+        go.putExtra("game num", Gnum);
+        go.putExtra("team num", Tnum);
+        go.putExtra("auto", auto);
+        go.putExtra("switch", swi);
+        go.putExtra("scale", scale);
+        go.putExtra("portal", portal);
+        go.putExtra("exchange", exch);
+        go.putExtra("climb", climb);
+        go.putExtra("help", help);
+        startActivityForResult(go, 1);
     }
 
     public void clearpage(View view) {
@@ -129,6 +183,7 @@ public class newTeam extends AppCompatActivity {
                s5.setChecked(false);
                gn.setText("");
                tn.setText("");
+                Toast.makeText(newTeam.this, "The page has been cleared", Toast.LENGTH_LONG).show();
             }
         });
         adb1.setNegativeButton("no", new DialogInterface.OnClickListener() {
@@ -142,6 +197,7 @@ public class newTeam extends AppCompatActivity {
 
 
     public void saveteam(View view) {
+        if(Tnum!=null && !Tnum.equals("0") && Gnum!=null && !Gnum.equals("0")){
         AlertDialog.Builder adb1;
         adb1= new AlertDialog.Builder(newTeam.this);
         adb1.setTitle("Confrim save");
@@ -165,6 +221,7 @@ public class newTeam extends AppCompatActivity {
                 String id=ref.push().getKey();
                 Team team=new Team(id,Tnum,Gnum,auto,help,climb,swi,scale,portal,exch);
                 ref.child(id).setValue(team);
+                Toast.makeText(newTeam.this, "The team has been saved to the data base", Toast.LENGTH_LONG).show();
             }
         });
         adb1.setNegativeButton("no", new DialogInterface.OnClickListener() {
@@ -175,6 +232,9 @@ public class newTeam extends AppCompatActivity {
         });
         AlertDialog ad=adb1.create();
         ad.show();}
+        else{
+              Toast.makeText(newTeam.this, "Please enter a valid game or team number", Toast.LENGTH_LONG).show();
+    }}
 
 
     public boolean onCreateOptionsMenu(Menu menu){

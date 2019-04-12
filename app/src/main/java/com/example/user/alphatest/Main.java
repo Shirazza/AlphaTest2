@@ -3,17 +3,18 @@ package com.example.user.alphatest;
 import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.content.Intent;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.Toast;
-
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -25,6 +26,7 @@ public class Main extends AppCompatActivity {
     EditText Tn, Tnum, Ps, email;
     FirebaseAuth firebaseAuth;
     String pass, Tname, Team;
+    BroadcastBatt broadcastBatt;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,11 +36,28 @@ public class Main extends AppCompatActivity {
         Tnum=(EditText)findViewById(R.id.Tnum);
         Ps=(EditText)findViewById(R.id.Ps);
         email=(EditText)findViewById(R.id.email);
+
         firebaseAuth=FirebaseAuth.getInstance();
+
+        broadcastBatt = new BroadcastBatt();
 
         Intent g=getIntent();
         pass=g.getStringExtra("new password");
         Ps.setText(pass);
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+        registerReceiver(broadcastBatt, new IntentFilter(Intent.ACTION_BATTERY_CHANGED));
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+
+        unregisterReceiver(broadcastBatt);
     }
 
     public void newP(View view) {

@@ -1,106 +1,127 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="top"
-    android:layout_height="match_parent"
     tools:context=".Help">
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/image"/>
-
-
-    <ScrollView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <LinearLayout
+       <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/textView8"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                style="@style/TextAppearance.AppCompat.Large"
-                android:text="Autonomous: the first 15 seconds where the robots work autonomous to cross the line and pus power cubes on the switch and scale" />
-        </LinearLayout>
+           <ImageView
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               app:srcCompat="@mipmap/ic_launcher" />
 
-        <LinearLayout
+           <TextView
+                android:text="Autonomous: the first 15 seconds where the robots work autonomous to cross the line and pus power cubes on the switch and scale"
+                android:layout_width="0dp"
+               android:layout_weight="5"
+                android:layout_height="wrap_content" />
+       </LinearLayout>
+
+       <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/textView9"
-                android:layout_width="wrap_content"
+            <ImageView
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                style="@style/TextAppearance.AppCompat.Large"
-                android:text="Switch: There are two switches on the field, one per alliance. Each switch is centered across the width of the field. Each switch features two plates, The switch tilts and rests in different positions based on the placement of power cubes." />
+                app:srcCompat="@mipmap/ic_launcher" />
+
+            <TextView
+                android:text="Switch: There are two switches on the field, one per alliance. Each switch is centered across the width of the field. Each switch features two plates, The switch tilts and rests in different positions based on the placement of power cubes."
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:layout_height="wrap_content" />
+       </LinearLayout>
+
+       <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@mipmap/ic_launcher" />
+
+            <TextView
+                android:text="Scale: There is one scale centered in the field. Each scale features two plates. At the start of the match the plates are even, the scale can tilt and rest in different positions depending on the number and location of the power cubes on the plates."
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:layout_height="wrap_content" />
+       </LinearLayout>
+
+
+       <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@mipmap/ic_launcher" />
+
+            <TextView
+                android:text="Portal: human players may deliver power cubes to robots through either of the portal walls. The chute features a swinging wall that the human player uses to push the power cubes onto the field."
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:layout_height="wrap_content" />
+       </LinearLayout>
+
+       <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@mipmap/ic_launcher" />
+
+            <TextView
+                android:text="Exchange: An exchange is located between player station 1 and player station 2 and used by robots to deliver power cubes to human players. Human players can then either place power cubes in the vault or feed them back to the robot through the return."
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:layout_height="wrap_content" />
+       </LinearLayout>
+
+       <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@mipmap/ic_launcher" />
+
+            <TextView
+                android:text="Climb: Near the end of the match, the members of the alliance need to climb from the platform and be fully supported by the scale with the bumpers fully above the bricks."
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:layout_height="wrap_content" />
+       </LinearLayout>
+
     </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/textView10"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                style="@style/TextAppearance.AppCompat.Large"
-                android:text="Scale: There is one scale centered in the field. Each scale features two plates. At the start of the match the plates are even, the scale can tilt and rest in different positions depending on the number and location of the power cubes on the plates." />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/textView11"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                style="@style/TextAppearance.AppCompat.Large"
-                android:text="Portal: human players may deliver power cubes to robots through either of the portal walls. The chute features a swinging wall that the human player uses to push the power cubes onto the field." />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/textView12"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                style="@style/TextAppearance.AppCompat.Large"
-                android:text="Exchange: An exchange is located between player station 1 and player station 2 and used by robots to deliver power cubes to human players. Human players can then either place power cubes in the vault or feed them back to the robot through the return." />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/textView13"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                style="@style/TextAppearance.AppCompat.Large"
-                android:text="Climb: Near the end of the match, the members of the alliance need to climb from the platform and be fully supported by the scale with the bumpers fully above the bricks." />
-        </LinearLayout>
-    </ScrollView>
-</LinearLayout>
+</ScrollView>

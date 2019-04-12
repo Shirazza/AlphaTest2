@@ -137,7 +137,6 @@ public class search extends AppCompatActivity implements AdapterView.OnItemSelec
             refreshList(false);
         }
         else{
-            //show general chart
             refreshList(true);
         }
     }

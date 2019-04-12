@@ -867,9 +867,7 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textView
 id textView10
-id textView11
 id textView12
-id textView13
 id textView14
 id textView15
 id textView16
@@ -882,10 +880,9 @@ id textView4
 id textView5
 id textView56
 id textView6
+id textView66
 id textView77
 id textView78
-id textView8
-id textView9
 id theCode
 id theemail
 id thenewP
