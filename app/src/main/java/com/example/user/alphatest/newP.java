@@ -37,7 +37,7 @@ public class newP extends AppCompatActivity {
 
     public void sendM(View view) {
         phoneNum=thephoneNum.getText().toString();
-        if(phoneNum.equals("0509022098")|| phoneNum.equals("05056994969")) {
+        if(phoneNum.equals("0509022098")|| phoneNum.equals("0506994969")) {
             code=""+((int)(Math.random()*900)+100);
             SmsManager smsManager=SmsManager.getDefault();
             smsManager.sendTextMessage(phoneNum, null, code, null, null);

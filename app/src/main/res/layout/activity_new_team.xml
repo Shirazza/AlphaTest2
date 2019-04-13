@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="bottom"
+    android:background="@drawable/gardientbackground"
     tools:context=".newTeam">
 
     <ScrollView
@@ -27,8 +28,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="The team:"
-                android:textColor="@android:color/black"
-                android:textSize="20dp" />
+                android:textColor="#fff"
+                android:fontFamily="@font/caviardreams"
+                android:textSize="25dp" />
 
             <Space
                 android:layout_width="100dp"
@@ -57,8 +59,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="The game number:"
-                    android:textColor="@android:color/black"
-                    android:textSize="20dp" />
+                    android:textColor="#fff"
+                    android:fontFamily="@font/caviardreams"
+                    android:textSize="25dp" />
 
                 <Space
                     android:layout_width="20dp"
@@ -99,11 +102,12 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Autonomous"
-                    android:textColor="@android:color/black"
+                    android:textColor="#fff"
+                    android:fontFamily="@font/caviardreams"
                     android:textSize="20dp" />
 
                 <Space
-                    android:layout_width="70dp"
+                    android:layout_width="50dp"
                     android:layout_height="match_parent" />
 
                 <TextView
@@ -111,7 +115,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="off"
-                    android:textColor="@android:color/black"
+                    android:textColor="#fff"
+                    android:fontFamily="@font/caviardreams"
                     android:textSize="20dp" />
 
                 <Switch
@@ -124,7 +129,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="on"
-                    android:textColor="@android:color/black"
+                    android:textColor="#fff"
+                    android:fontFamily="@font/caviardreams"
                     android:textSize="20dp" />
             </LinearLayout>
 
@@ -142,11 +148,12 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Switch"
-                    android:textColor="@android:color/black"
+                    android:textColor="#fff"
+                    android:fontFamily="@font/caviardreams"
                     android:textSize="20dp" />
 
                 <Space
-                    android:layout_width="70dp"
+                    android:layout_width="30dp"
                     android:layout_height="match_parent" />
 
                 <TextView
@@ -154,7 +161,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="1"
-                    android:textColor="@android:color/black"
+                    android:textColor="#fff"
+                    android:fontFamily="@font/caviardreams"
                     android:textSize="20dp" />
 
                 <SeekBar
@@ -163,14 +171,17 @@
                     android:layout_width="240dp"
                     android:layout_height="wrap_content"
                     android:max="9"
-                    android:progress="0" />
+                    android:progress="0"
+                    android:thumb="@drawable/swipe"
+                    android:progressTint="#fff"/>
 
                 <TextView
                     android:id="@+id/text0View3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="10"
-                    android:textColor="@android:color/black"
+                    android:textColor="#fff"
+                    android:fontFamily="@font/caviardreams"
                     android:textSize="20dp" />
             </LinearLayout>
 
@@ -188,11 +199,12 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Scale"
-                    android:textColor="@android:color/black"
+                    android:textColor="#fff"
+                    android:fontFamily="@font/caviardreams"
                     android:textSize="20dp" />
 
                 <Space
-                    android:layout_width="82dp"
+                    android:layout_width="35dp"
                     android:layout_height="match_parent" />
 
                 <TextView
@@ -200,7 +212,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="1"
-                    android:textColor="@android:color/black"
+                    android:textColor="#fff"
+                    android:fontFamily="@font/caviardreams"
                     android:textSize="20dp" />
 
                 <SeekBar
@@ -209,15 +222,18 @@
                     android:layout_width="240dp"
                     android:layout_height="wrap_content"
                     android:max="9"
-                    android:progress="0" />
+                    android:progress="0"
+                    android:thumb="@drawable/swipe"
+                    android:progressTint="#fff"/>
 
                 <TextView
                     android:id="@+id/text0View4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="10"
-                    android:textColor="@android:color/black"
-                    android:textSize="20dp" />
+                    android:textColor="#fff"
+                    android:fontFamily="@font/caviardreams"
+                    android:textSize="20dp"/>
             </LinearLayout>
 
             <Space
@@ -234,11 +250,12 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Portal"
-                    android:textColor="@android:color/black"
-                    android:textSize="20dp" />
+                    android:textColor="#fff"
+                    android:fontFamily="@font/caviardreams"
+                    android:textSize="20dp"/>
 
                 <Space
-                    android:layout_width="140dp"
+                    android:layout_width="105dp"
                     android:layout_height="match_parent" />
 
                 <TextView
@@ -246,7 +263,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="off"
-                    android:textColor="@android:color/black"
+                    android:textColor="#fff"
+                    android:fontFamily="@font/caviardreams"
                     android:textSize="20dp" />
 
                 <Switch
@@ -259,8 +277,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="on"
-                    android:textColor="@android:color/black"
-                    android:textSize="20dp" />
+                    android:textColor="#fff"
+                    android:fontFamily="@font/caviardreams"
+                    android:textSize="20dp"/>
             </LinearLayout>
 
             <LinearLayout
@@ -273,11 +292,12 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="score:"
-                    android:textColor="@android:color/black"
+                    android:textColor="#fff"
+                    android:fontFamily="@font/caviardreams"
                     android:textSize="20dp" />
 
                 <Space
-                    android:layout_width="76dp"
+                    android:layout_width="31dp"
                     android:layout_height="match_parent" />
 
                 <TextView
@@ -285,8 +305,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="1"
-                    android:textColor="@android:color/black"
-                    android:textSize="20dp" />
+                    android:textColor="#fff"
+                    android:fontFamily="@font/caviardreams"
+                    android:textSize="20dp"/>
 
                 <SeekBar
                     android:id="@+id/seekBar3"
@@ -294,15 +315,18 @@
                     android:layout_width="240dp"
                     android:layout_height="wrap_content"
                     android:max="9"
-                    android:progress="0" />
+                    android:progress="0"
+                    android:thumb="@drawable/swipe"
+                    android:progressTint="#fff"/>
 
                 <TextView
                     android:id="@+id/text0View18"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="10"
-                    android:textColor="@android:color/black"
-                    android:textSize="20dp" />
+                    android:textColor="#fff"
+                    android:fontFamily="@font/caviardreams"
+                    android:textSize="20dp"/>
             </LinearLayout>
 
             <Space
@@ -319,11 +343,12 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Exchange"
-                    android:textColor="@android:color/black"
+                    android:textColor="#fff"
+                    android:fontFamily="@font/caviardreams"
                     android:textSize="20dp" />
 
                 <Space
-                    android:layout_width="102dp"
+                    android:layout_width="66dp"
                     android:layout_height="match_parent" />
 
                 <TextView
@@ -331,7 +356,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="off"
-                    android:textColor="@android:color/black"
+                    android:textColor="#fff"
+                    android:fontFamily="@font/caviardreams"
                     android:textSize="20dp" />
 
                 <Switch
@@ -344,7 +370,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="on"
-                    android:textColor="@android:color/black"
+                    android:textColor="#fff"
+                    android:fontFamily="@font/caviardreams"
                     android:textSize="20dp" />
             </LinearLayout>
 
@@ -358,11 +385,12 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="score:"
-                    android:textColor="@android:color/black"
+                    android:textColor="#fff"
+                    android:fontFamily="@font/caviardreams"
                     android:textSize="20dp" />
 
                 <Space
-                    android:layout_width="76dp"
+                    android:layout_width="31dp"
                     android:layout_height="match_parent" />
 
                 <TextView
@@ -370,7 +398,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="1"
-                    android:textColor="@android:color/black"
+                    android:textColor="#fff"
+                    android:fontFamily="@font/caviardreams"
                     android:textSize="20dp" />
 
                 <SeekBar
@@ -379,14 +408,17 @@
                     android:layout_width="240dp"
                     android:layout_height="wrap_content"
                     android:max="9"
-                    android:progress="0" />
+                    android:progress="0"
+                    android:progressTint="#fff"
+                    android:thumb="@drawable/swipe"/>
 
                 <TextView
                     android:id="@+id/text0View28"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="10"
-                    android:textColor="@android:color/black"
+                    android:textColor="#fff"
+                    android:fontFamily="@font/caviardreams"
                     android:textSize="20dp" />
             </LinearLayout>
 
@@ -404,11 +436,12 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Climbing"
-                    android:textColor="@android:color/black"
+                    android:textColor="#fff"
+                    android:fontFamily="@font/caviardreams"
                     android:textSize="20dp" />
 
                 <Space
-                    android:layout_width="109dp"
+                    android:layout_width="77dp"
                     android:layout_height="match_parent" />
 
                 <TextView
@@ -416,7 +449,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="off"
-                    android:textColor="@android:color/black"
+                    android:textColor="#fff"
+                    android:fontFamily="@font/caviardreams"
                     android:textSize="20dp" />
 
                 <Switch
@@ -429,8 +463,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="on"
-                    android:textColor="@android:color/black"
-                    android:textSize="20dp" />
+                    android:textColor="#fff"
+                    android:fontFamily="@font/caviardreams"
+                    android:textSize="20dp"/>
             </LinearLayout>
 
             <Space
@@ -447,11 +482,12 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Helping another robot climb"
-                    android:textColor="@android:color/black"
-                    android:textSize="20dp" />
+                    android:textColor="#fff"
+                    android:fontFamily="@font/caviardreams"
+                    android:textSize="20dp"/>
 
                 <Space
-                    android:layout_width="50dp"
+                    android:layout_width="30dp"
                     android:layout_height="match_parent" />
 
                 <TextView
@@ -459,8 +495,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="off"
-                    android:textColor="@android:color/black"
-                    android:textSize="20dp" />
+                    android:textColor="#fff"
+                    android:fontFamily="@font/caviardreams"
+                    android:textSize="20dp"/>
 
                 <Switch
                     android:id="@+id/switch5"
@@ -472,8 +509,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="on"
-                    android:textColor="@android:color/black"
-                    android:textSize="20dp" />
+                    android:textColor="#fff"
+                    android:fontFamily="@font/caviardreams"
+                    android:textSize="20dp"/>
             </LinearLayout>
 
             <Space

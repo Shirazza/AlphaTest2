@@ -9,18 +9,27 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         style="@style/TextAppearance.AppCompat.Large"
-        android:text="TextView" />
+        android:text="TextView"
+        android:textColor="#ffffff"
+        android:fontFamily="@font/disposabledroidbb"
+        android:textSize="25dp"/>
 
     <TextView
         android:id="@+id/num"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:text="TextView"
+        android:textColor="#ffffff"
+        android:fontFamily="@font/caviardreams"
+        android:textSize="20dp"/>
 
     <TextView
         android:id="@+id/ability"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:text="TextView"
+        android:textColor="#ffffff"
+        android:fontFamily="@font/caviardreams"
+        android:textSize="20dp"/>
 
 </LinearLayout>

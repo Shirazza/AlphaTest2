@@ -197,6 +197,8 @@ public class newTeam extends AppCompatActivity {
 
 
     public void saveteam(View view) {
+        Gnum=gn.getText().toString();
+        Tnum=tn.getText().toString();
         if(Tnum!=null && !Tnum.equals("0") && Gnum!=null && !Gnum.equals("0")){
         AlertDialog.Builder adb1;
         adb1= new AlertDialog.Builder(newTeam.this);
