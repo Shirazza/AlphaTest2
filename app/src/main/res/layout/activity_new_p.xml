@@ -69,12 +69,13 @@
                 android:inputType="phone" />
         </LinearLayout>
 
-        <Button
+        <ImageButton
             android:id="@+id/sendC"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="sendM"
-            android:text="send" />
+            android:src="@drawable/sned"
+            android:background="@android:color/transparent"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -103,12 +104,13 @@
                 android:inputType="number" />
         </LinearLayout>
 
-        <Button
+        <ImageButton
             android:id="@+id/checkC"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="checkC"
-            android:text="enter" />
+            android:src="@drawable/enter"
+            android:background="@android:color/transparent"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -137,12 +139,13 @@
                 android:inputType="textPassword" />
         </LinearLayout>
 
-        <Button
+        <ImageButton
             android:id="@+id/newP"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="next"
-            android:text="next" />
+            android:src="@drawable/enter"
+            android:background="@android:color/transparent"/>
 
     </LinearLayout>
 
@@ -151,11 +154,11 @@
         android:layout_height="220dp"
         android:layout_weight="7"/>
 
-    <Button
+    <ImageButton
         android:id="@+id/back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
         android:onClick="backtostart"
-        android:text="back" />
+        android:src="@drawable/back"
+        android:background="@android:color/transparent"/>
 </LinearLayout>

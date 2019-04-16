@@ -16,5 +16,5 @@
         android:textColor="#fff"
         android:fontFamily="@font/caviardreams"
         android:textSize="20dp"
-        android:text="Credits to Shiraz Zafrani for making the project\n\nTo blue alliance web site\n\nTo First robotics competition 2018 game amd season manual for the pictures and information\n\nThe teacher: Albert Levy\n\nThanks to Lior Karamany for the help\n\n" />
+        android:text="Credits to Shiraz Zafrani for making the project\n\nTo blue alliance web site\n\nTo First robotics competition 2018 game amd season manual for the pictures and information\n\nThe teacher: Albert Levy\n\nThanks to Lior Karamany for the help\n\n Thanks to Yarin Yani for helping in the design" />
 </LinearLayout>

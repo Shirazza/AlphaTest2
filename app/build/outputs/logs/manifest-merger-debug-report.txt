@@ -139,7 +139,7 @@ MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\user\.gradle\caches\
 	android:roundIcon
 		ADDED from C:\Users\user\AndroidStudioProjects\AlphaTest2\app\src\main\AndroidManifest.xml:13:9-54
 	android:icon
-		ADDED from C:\Users\user\AndroidStudioProjects\AlphaTest2\app\src\main\AndroidManifest.xml:11:9-43
+		ADDED from C:\Users\user\AndroidStudioProjects\AlphaTest2\app\src\main\AndroidManifest.xml:11:9-39
 	android:allowBackup
 		ADDED from C:\Users\user\AndroidStudioProjects\AlphaTest2\app\src\main\AndroidManifest.xml:10:9-35
 	android:theme

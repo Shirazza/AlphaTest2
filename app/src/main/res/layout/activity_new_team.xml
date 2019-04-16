@@ -80,13 +80,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="20dp" />
 
-            <Button
+            <ImageButton
                 android:id="@+id/button8"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:onClick="gotoweb"
-                android:text="Games chart (blue alliance)" />
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/tba"
+                android:background="@android:color/transparent"/>
 
             <Space
                 android:layout_width="match_parent"
@@ -122,7 +125,9 @@
                 <Switch
                     android:id="@+id/switch1"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:track="@drawable/switchtrack"
+                    android:thumb="@drawable/thumbswitch"/>
 
                 <TextView
                     android:id="@+id/text0View2"
@@ -270,7 +275,9 @@
                 <Switch
                     android:id="@+id/switch2"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:track="@drawable/switchtrack"
+                    android:thumb="@drawable/thumbswitch"/>
 
                 <TextView
                     android:id="@+id/text0View22"
@@ -363,7 +370,9 @@
                 <Switch
                     android:id="@+id/switch3"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:track="@drawable/switchtrack"
+                    android:thumb="@drawable/thumbswitch"/>
 
                 <TextView
                     android:id="@+id/text0View88"
@@ -456,7 +465,9 @@
                 <Switch
                     android:id="@+id/switch4"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:track="@drawable/switchtrack"
+                    android:thumb="@drawable/thumbswitch"/>
 
                 <TextView
                     android:id="@+id/text0View87"
@@ -487,7 +498,7 @@
                     android:textSize="20dp"/>
 
                 <Space
-                    android:layout_width="30dp"
+                    android:layout_width="25dp"
                     android:layout_height="match_parent" />
 
                 <TextView
@@ -502,7 +513,9 @@
                 <Switch
                     android:id="@+id/switch5"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:track="@drawable/switchtrack"
+                    android:thumb="@drawable/thumbswitch"/>
 
                 <TextView
                     android:id="@+id/text0View67"
@@ -528,26 +541,28 @@
                 android:layout_weight="1"
                 android:layout_height="match_parent" />
 
-            <Button
+            <ImageButton
                 android:id="@+id/button9"
-                android:layout_width="0dp"
-                android:layout_weight="2"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
                 android:layout_height="wrap_content"
                 android:onClick="clearpage"
-                android:text="clear" />
+                android:src="@drawable/clear"
+                android:background="@android:color/transparent"/>
 
             <Space
                 android:layout_width="0dp"
-                android:layout_weight="3"
+                android:layout_weight="9"
                 android:layout_height="match_parent" />
 
-            <Button
+            <ImageButton
                 android:id="@+id/button10"
-                android:layout_width="0dp"
-                android:layout_weight="2"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
                 android:layout_height="wrap_content"
                 android:onClick="saveteam"
-                android:text="save" />
+                android:src="@drawable/save"
+                android:background="@android:color/transparent"/>
 
             <Space
                 android:layout_width="0dp"

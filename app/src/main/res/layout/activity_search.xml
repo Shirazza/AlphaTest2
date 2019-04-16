@@ -61,11 +61,12 @@
             android:gravity="right"
             android:orientation="horizontal">
 
-            <Button
+            <ImageButton
                 android:id="@+id/button5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="enter"
+                android:src="@drawable/enter"
+                android:background="@android:color/transparent"
                 android:onClick="checkAction"/>
         </LinearLayout>
 

@@ -8,48 +8,72 @@
         style="@android:style/TextAppearance.Large"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Team Number" />
+        android:text="Team Number"
+        android:textColor="#ffffff"
+        android:fontFamily="@font/disposabledroidbb"
+        android:textSize="25dp"/>
 
     <TextView
         android:id="@+id/autoText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Autonomous" />
+        android:text="Autonomous"
+        android:textColor="#ffffff"
+        android:fontFamily="@font/caviardreams"
+        android:textSize="20dp"/>
 
     <TextView
         android:id="@+id/helpText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Help" />
+        android:text="Help"
+        android:textColor="#ffffff"
+        android:fontFamily="@font/caviardreams"
+        android:textSize="20dp"/>
 
     <TextView
         android:id="@+id/climbText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Climb" />
+        android:text="Climb"
+        android:textColor="#ffffff"
+        android:fontFamily="@font/caviardreams"
+        android:textSize="20dp"/>
 
     <TextView
         android:id="@+id/switchText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Switch" />
+        android:text="Switch"
+        android:textColor="#ffffff"
+        android:fontFamily="@font/caviardreams"
+        android:textSize="20dp"/>
 
     <TextView
         android:id="@+id/scaleText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Scale" />
+        android:text="Scale"
+        android:textColor="#ffffff"
+        android:fontFamily="@font/caviardreams"
+        android:textSize="20dp" />
 
     <TextView
         android:id="@+id/portalText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Portal" />
+        android:text="Portal"
+        android:textColor="#ffffff"
+        android:fontFamily="@font/caviardreams"
+        android:textSize="20dp"/>
 
     <TextView
         android:id="@+id/exchangeText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Exchange" />
+        android:text="Exchange"
+        android:textColor="#ffffff"
+        android:fontFamily="@font/caviardreams"
+        android:textSize="20dp"/>
 
 </LinearLayout>

@@ -14,15 +14,13 @@
         android:layout_height="0dp"
         android:layout_weight="1" />
 
-    <TextView
+    <ImageView
         android:id="@+id/tv"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:textColor="@android:color/black"
-        android:autoSizeTextType="uniform"
         android:gravity="center"
-        android:text="FSA" />
+        android:src="@drawable/fsa" />
 
     <Space
         android:layout_width="match_parent"
@@ -106,14 +104,15 @@
             android:textColor="#FFF"
             app:fontFamily="@font/caviardreams"/>
 
-        <Button
+        <ImageButton
             android:id="@+id/button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:layout_gravity="right"
             android:onClick="newP"
-            android:text="new user" />
+            android:src="@drawable/signup"
+            android:background="@android:color/transparent"/>
     </LinearLayout>
 
     <Space
@@ -166,7 +165,7 @@
             android:layout_height="wrap_content"
             android:text="Team number:"
             android:textColor="#FFF"
-            android:textSize="40dp"
+            android:textSize="35dp"
             app:fontFamily="@font/disposabledroidbb"/>
 
         <Space
@@ -187,14 +186,14 @@
         android:layout_height="0dp"
         android:layout_weight="1" />
 
-    <Button
+    <ImageButton
         android:id="@+id/button2"
         android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_height="wrap_content"
         android:layout_gravity="right"
         android:onClick="chose"
-        android:text="log in" />
+        android:src="@drawable/login"
+        android:background="@android:color/transparent"/>
 
     <Space
         android:layout_width="match_parent"
