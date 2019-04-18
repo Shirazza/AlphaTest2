@@ -65,10 +65,11 @@ public class newP extends AppCompatActivity {
 
 
     public void next(View view) {
+        codeEntered=theCode.getText().toString();
         newP=thenewP.getText().toString();
         email=theemail.getText().toString();
 
-        if (newP!=null){
+        if (newP!=null && codeEntered!=null){
             AlertDialog.Builder adb1;
             adb1= new AlertDialog.Builder(this);
             adb1.setTitle("Are you sure you want to continue?");
