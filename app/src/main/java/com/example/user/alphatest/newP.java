@@ -1,20 +1,14 @@
 package com.example.user.alphatest;
 
-import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.telephony.SmsManager;
-import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
-
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.*;
 
 public class newP extends AppCompatActivity {
@@ -45,15 +39,6 @@ public class newP extends AppCompatActivity {
         else
             Toast.makeText(this, "Enter only your mentor's phone number", Toast.LENGTH_LONG).show();
     }
-
-    /*public boolean checkPhone(){
-        if(phoneNum.length()!=10){
-            return false; }
-        if(!phoneNum.substring(0,2).equals("05")){
-            return false; }
-        if(phoneNum.substring(2,3).equals("7")|| phoneNum.substring(2,3).equals("9")){
-            return false; }
-        return true; }*/
 
     public void checkC(View view) {
         codeEntered=theCode.getText().toString();

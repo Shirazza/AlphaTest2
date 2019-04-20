@@ -1,19 +1,14 @@
 package com.example.user.alphatest;
 
 import android.app.ProgressDialog;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.support.annotation.NonNull;
-import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.content.Intent;
 import android.util.Log;
-import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.RadioButton;
 import android.widget.Toast;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -26,20 +21,13 @@ public class Main extends AppCompatActivity {
     EditText Tn, Tnum, Ps, email;
     FirebaseAuth firebaseAuth;
     String pass, Tname, Team;
+
     BroadcastBatt broadcastBatt;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Tn=(EditText)findViewById(R.id.Tn);
-        Tnum=(EditText)findViewById(R.id.Tnum);
-        Ps=(EditText)findViewById(R.id.Ps);
-        email=(EditText)findViewById(R.id.email);
-
-        firebaseAuth=FirebaseAuth.getInstance();
-
-        broadcastBatt = new BroadcastBatt();
 
         Intent g=getIntent();
         pass=g.getStringExtra("new password");
